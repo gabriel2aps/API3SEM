@@ -52,7 +52,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
  *       200:
  *         description: Lista de usuários
  */
-app.post('/criar-tabelas', (req, res) => {
+app.post('/criartabelas', (req, res) => {
   const sqlUsuarios = `
     CREATE TABLE IF NOT EXISTS usuarios (
       id INT PRIMARY KEY AUTO_INCREMENT,
